@@ -30,8 +30,7 @@ const HourCard = ({
           alt={data?.weather?.[0]?.description || ""}
         />
         <Typography sx={{ width: 75, color: "#8d8d8d" }}>
-          {new Date(data.dt_txt).getHours() % 12}:00{" "}
-          {new Date(data.dt_txt).getHours() > 11 ? "PM" : "AM"}
+          {new Date(data.dt_txt).getHours()}:00
         </Typography>
       </Box>
       {!noBoarder && (
