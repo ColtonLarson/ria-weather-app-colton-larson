@@ -30,8 +30,9 @@ const DayCard = ({
           }}
         >
           <Typography sx={{ fontWeight: 600 }}>
-            {days[new Date(data.dt).getDay()]},{" "}
-            {months[new Date(data.dt).getMonth()]} {new Date(data.dt).getDate()}
+            {days[new Date(data.dt_txt).getDay()]},{" "}
+            {months[new Date(data.dt_txt).getMonth()]}{" "}
+            {new Date(data.dt_txt).getDate()}
           </Typography>
           <Typography
             sx={{ fontSize: 12, whiteSpace: "nowrap", overflowX: "hidden" }}

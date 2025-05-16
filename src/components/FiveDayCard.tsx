@@ -10,7 +10,7 @@ const FiveDayCard = ({ data }: { data: any[] }) => {
       <Divider />
       <Box sx={{ p: 2 }}>
         {data.map((day, i: number) => {
-          if (i < 8) return <DayCard data={day} noBoarder={i === 7} />;
+          if (i % 8 === 0) return <DayCard data={day} noBoarder={i === 7} />;
           else return null;
         })}
       </Box>
